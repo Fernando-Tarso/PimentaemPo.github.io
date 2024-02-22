@@ -1,0 +1,56 @@
+:root {
+  --bg1: #eee;
+  --tx1: #000;
+  --bd1: #aaa;
+}
+
+body {
+  margin: 0;
+  display: grid;
+  background-color: var(--bg1);
+  color: var(--tx1);
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+.bg-test {
+  background-color: #bbb;
+}
+
+.mg-1 {
+  margin: 2rem auto;
+}
+
+.pd-0 {
+  padding: 5px;
+}
+
+.pd-1 {
+  padding: 20px 16px;
+}
+
+.tx-c {
+  text-align: center;
+}
+
+.bd-1 {
+  border: solid 1px var(--bd1);
+  border-radius: 10px;
+}
+
+.ft-1 {
+  font-size: calc(0.8rem + 0.5vw);
+}
+
+.ft-2 {
+  font-size: calc(0.5rem + 0.3vw);
+}
+
+.ft-3 {
+  font-size: calc(0.3rem + 0.1vw);
+}
