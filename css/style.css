@@ -5,28 +5,20 @@
   --bd0: solid 1px var(--bd1);
   --bg-00: linear-gradient(
       00deg,
-      rgba(165, 165, 165, 0.5),
+      rgba(165, 0, 0, 0.5),
       rgba(255, 255, 255, 0) 1em
     ),
-    linear-gradient(90deg, rgba(165, 165, 165, 0.5), rgba(255, 255, 255, 0) 1em),
-    linear-gradient(
-      180deg,
-      rgba(165, 165, 165, 0.5),
-      rgba(255, 255, 255, 0) 1em
-    ),
-    linear-gradient(
-      270deg,
-      rgba(165, 165, 165, 0.5),
-      rgba(255, 255, 255, 0) 1em
-    );
+    linear-gradient(90deg, rgba(165, 0, 0, 0.5), rgba(255, 255, 255, 0) 1em),
+    linear-gradient(180deg, rgba(165, 0, 0, 0.5), rgba(255, 255, 255, 0) 1em),
+    linear-gradient(270deg, rgba(165, 0, 0, 0.5), rgba(255, 255, 255, 0) 1em);
   --bg-01: linear-gradient(
       00deg,
-      rgba(225, 0, 0, 0.5),
+      rgba(240, 0, 0, 0.5),
       rgba(255, 255, 255, 0) 1em
     ),
-    linear-gradient(90deg, rgba(225, 0, 0, 0.5), rgba(255, 255, 255, 0) 1em),
-    linear-gradient(180deg, rgba(225, 0, 0, 0.5), rgba(255, 255, 255, 0) 1em),
-    linear-gradient(270deg, rgba(225, 0, 0, 0.5), rgba(255, 255, 255, 0) 1em);
+    linear-gradient(90deg, rgba(240, 0, 0, 0.5), rgba(255, 255, 255, 0) 1em),
+    linear-gradient(180deg, rgba(240, 0, 0, 0.5), rgba(255, 255, 255, 0) 1em),
+    linear-gradient(270deg, rgba(240, 0, 0, 0.5), rgba(255, 255, 255, 0) 1em);
 }
 
 body {
@@ -43,14 +35,21 @@ p {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+  color: var(--tx1);
+}
+
 img {
   max-width: 100%;
   height: 240px;
   width: 100%;
 }
 
-header:hover {
+header:hover,
+article:hover {
   background: var(--bg-01);
+  box-shadow: 0 0 5px 3px rgba(240, 0, 0, 0.5);
 }
 
 .grd {
@@ -70,18 +69,26 @@ header:hover {
   width: 80vw;
   height: 20vw;
 }
-
 .bg-00 {
   background: var(--bg-00);
 }
 .bg-01 {
   background: var(--bg-01);
 }
-
 .bg-1 {
   background-color: aquamarine;
 }
 
+.dpf {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.mg-0 {
+  margin: 1rem, auto;
+}
 .mg-1 {
   margin: 2rem auto;
 }
@@ -112,6 +119,8 @@ header:hover {
 }
 .bd-1 {
   border: var(--bd0);
+}
+.bdr0 {
   border-radius: 10px;
 }
 
